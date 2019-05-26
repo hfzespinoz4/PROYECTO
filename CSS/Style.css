@@ -1,0 +1,57 @@
+/* Archivo de Estilos 
+Acá se indican las clases e identificadores que son 
+utilizados de manera global en el sitio web */
+
+.main{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.0; 
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
+
+.nav-footer{
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    position: relative;
+    
+           
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: flex-end;
+    align-content: space-around;
+    margin-bottom: 30px;
+}
+
+.main-desc1{
+    display: flex;
+    position: relative;
+}
+
+.main-desc2{
+    display: flex;
+    position:relative;
+}
+
+.main-trends1{
+    display: flex;
+    position: relative;
+}
+
+.main-trends2{
+    display:flex;
+    position:relative;
+}
+
+footer{
+    align-content: space-around;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    margin-top: 30px;
+    position: relative;    
+}
