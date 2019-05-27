@@ -1,0 +1,63 @@
+/* Archivos de Estilos 
+Aca se indican los estilos de la pagina organization */
+
+
+.main{
+    font-family: 'Segoe UI', Verdana;
+    line-height: 1.0; 
+    margin-left: 4rem;
+    margin-right: 4rem;
+    background: linear-gradient(to top, #0076A2, white 10%);
+
+}
+
+.nav-footer{
+    align-content: center;
+    align-items:center;
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5rem;
+    margin-left: 1rem;
+    margin-right:1rem;
+    position: relative;
+    padding-left: 1rem;
+    padding-right: 1rem;       
+}
+
+.nav-menu{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: content;
+    position: sticky;
+    text-align:center;
+    margin-bottom: 2rem;
+    list-style: none;
+    background: #0076A2;
+    text-decoration-color: white;
+    padding-bottom: 1rem;
+    padding-top:1rem;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    color: #FDFEFE;
+    position: relative;
+    display: block;
+}
+
+li{
+    display:block;
+    box-sizing: content-box;
+}
+
+.title-pg{
+    visibility: hidden;
+}
+
+li:hover{
+    display:flex;
+    box-sizing: content-box;
+    background:red;
+}
