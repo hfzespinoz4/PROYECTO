@@ -62,3 +62,11 @@ li:hover{
     box-sizing: content-box;
     background:red;
 }
+
+.main-productos{
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items:center;
+}
