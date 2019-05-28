@@ -7,7 +7,7 @@ utilizados de manera global en el sitio web */
     line-height: 1.0; 
     margin-left: 4rem;
     margin-right: 4rem;
-    background: linear-gradient(to top, #0076A2, white 10%);
+    background: linear-gradient(to top, #0076A2, white 10%);  
 
 }
 
@@ -21,7 +21,7 @@ utilizados de manera global en el sitio web */
     margin-right:1rem;
     position: relative;
     padding-left: 1rem;
-    padding-right: 1rem;       
+    padding-right: 1rem;   
 }
 
 .nav-menu{
@@ -72,12 +72,14 @@ utilizados de manera global en el sitio web */
 }
 
 footer{
+  
     align-content: space-around;
     text-align: center;
     text-decoration: none;
     justify-content: center;
     margin-top: 2rem;
     position: relative;    
+    
 }
 
 a{

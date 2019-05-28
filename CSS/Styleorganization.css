@@ -26,3 +26,31 @@ li:hover{
     display:flex;
     box-sizing: content-box;
     background:red;
+}
+
+.section-main{
+    margin-bottom: 6rem;
+
+}
+
+.team-member{
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: all  0.7s ease-in-out; 
+}
+
+.member-image:hover{
+    box-shadow: 5rem;
+    transform: translateY(-1rem);
+}
+.member-text{
+    font-family: 'Segoe UI', Verdana;
+    font-size: 14px;
+    color: black;
+
+}
+
+
+
+
