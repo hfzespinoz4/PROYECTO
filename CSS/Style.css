@@ -102,3 +102,23 @@ li:hover{
     box-sizing: content-box;
     background:red;
 }
+
+.main__image{
+    width: 100%;
+}
+
+.main__promos-image{
+    width: 25%;
+}
+
+.nav-footer-image{
+    cursor: pointer;
+    transition: all  0.7s ease-in-out;
+
+}
+.nav-footer-image:hover{
+    box-shadow: 5rem;
+    transform: translateY(-5rem);
+    
+
+}
