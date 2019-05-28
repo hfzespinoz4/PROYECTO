@@ -54,6 +54,7 @@ li{
 
 .title-pg{
     visibility: hidden;
+    margin-top: 0.1rem;
 }
 
 li:hover{

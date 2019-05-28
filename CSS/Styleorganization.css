@@ -54,10 +54,10 @@ li{
 
 .title-pg{
     visibility: hidden;
+    margin-top: 0.1rem;  
 }
 
 li:hover{
     display:flex;
     box-sizing: content-box;
     background:red;
-}
