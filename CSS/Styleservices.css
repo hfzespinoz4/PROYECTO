@@ -36,6 +36,10 @@ li:hover{
     font-size: 20px;
     margin-top: 1rem;
     text-justify: distribute;
+    justify-items: Center;
+    align-items: center;
+    position:center;
+    padding-top: 2rem;
 }
 
 .service{
@@ -49,4 +53,9 @@ li:hover{
     background-color: #edeff2;
     border-radius: 0.25rem;
     order: (1,0); 
+}
+
+#security{
+    width:30%;
+    height: 30%;
 }
