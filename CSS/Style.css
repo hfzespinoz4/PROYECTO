@@ -143,7 +143,9 @@ footer{
     padding-top: 1rem;
     padding-bottom: 1rem;
     align-items: center;
-    align-content: center;
-    position:center;
-    display:flex;
+    align-content: space-around;
+    justify-items: center;
+    position:relative;
+    display:block;
+    margin:auto;
 }
