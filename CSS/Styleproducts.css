@@ -25,14 +25,14 @@ li:hover{
     background:orange;
 }
 
-.main-productos{
+/*.main-productos{
     position: relative;
     display:flex;
     justify-content: space-between;
     align-content: center;
     align-items:center;
     cursor: pointer;
-    transition: all  0.7s ease-in-out; 
+    transition: all  0.7s ease-in-out; */
 }
 
 .products-image:hover{
@@ -43,4 +43,19 @@ li:hover{
 
 .products-image{
     width: 25%;   
+}
+.main-products{
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    animation-duration: 1s;
+    animation-name: fade-out;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: none;
+    transition: box-shadow .2s ease-in-out,
+                transform .2 ease-in-out;
+    transform: translateY(0);
 }
