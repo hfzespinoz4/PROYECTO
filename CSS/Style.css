@@ -137,3 +137,13 @@ footer{
     position: relative;    
     
 }
+
+#logo{
+    position: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+    align-content: center;
+    position:center;
+    display:flex;
+}
