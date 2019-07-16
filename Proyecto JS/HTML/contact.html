@@ -4,182 +4,110 @@
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="author" content="Texy Diaz">
+        <meta name="author" content="Texy Diaz / Harvin Zúniga">
+        <meta name="description" content="TDI - Desarrollo e Innovación">
         <meta name="viewport" content="width=device-width"/>
-        <meta name="description" content=" tecnologia de informacion ">
-        <link rel="shortcut icon" href="../RESOURCES/marihuana.png" />
-        <link rel="stylesheet" type="text/css" href="../CSS/contact.css">
+        <link rel="shortcut icon" href="../RESOURCES/TDI-Logo.png" />
         <link rel="stylesheet" type="text/css" href="../CSS/home.css">
-        <link rel="stylesheet" type="text/css" href="../CSS/animate.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-        <title>Asociacion de Cannabis</title>
+        <link rel="stylesheet" href="../CSS/animate.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" type="text/css">
+        <title>TDI - Tecnología y Desarrollo</title>
     </head>
-    <main>
-        <div class="main-header"> 
-            <body class="main">
-                <img class="animated  zoomInUp bounce delay-0.4s" id="logo" src="../RESOURCES/marihuana.png"> 
-          
+    <body class="main"> <!-- Revisar la clase y su funcion en el CSS-->
+        <header>
+            <div class="main-header"> 
+                <img class="animated  zoomInUp bounce delay-0.4s company-logo" src="../RESOURCES/TDI-Logo.png" alt="Logotipo TDI"> 
                 <ul class="nav-menu">
                     <li><a href="../HTML/home.html">Home</a></li>
                     <li><a href="../HTML/organization.html">Nosotros</a></li>
-                    <li><a href="../HTML/plants.html">Plantas</a></li>
-                    <li><a href="../HTML/login.html">Socios</a></li>
+                    <li><a href="../HTML/plants.html">Productos</a></li>
+                    <li><a href="../HTML/plants.html">Servicios</a></li>
+                    <li><a href="../HTML/login.html">Clientes</a></li>
+                    <li><a href="../HTML/plants.html">Blog</a></li>
                     <li><a href="../HTML/contact.html">Contacto</a></li>
                 </ul>
-                </div>
+            </div>
             <section class="menu-wrap">
-                    <img id="logo" src="../RESOURCES/marihuana2.png">
-                    
-                                
-                            <input type="checkbox" class="toggler">
-                            <img src="../resources/hamburguesa.png" alt="icon menu hamburger" class="hamburger">
-                            <div class="menu">
-                                <div>
-                                    <div>
-                                        
-                                        <ul class="menu-list">
-                                                <li><a href="../HTML/home.html">Home</a></li>
-                                                <li><a href="../HTML/organization.html">Nosotros</a></li>
-                                                <li><a href="../HTML/plants.html">Plantas</a></li>
-                                                <li><a href="../HTML/login.html">Socios</a></li>
-                                                <li><a href="../HTML/contact.html">Contacto</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>  
+                <h2 id="title-wrap">TDI</h2>
+                <img class="company-logo" src="../RESOURCES/TDI-Logo.png" alt="Logotipo TDI">
+                <input type="checkbox" class="toggler">
+                    <img src="../resources/hamburguesa.png" alt="icon menu hamburger" class="hamburger">
+                    <div class="menu">
+                      <ul class="menu-list">
+                        <li><a href="../HTML/home.html">Home</a></li>
+                        <li><a href="../HTML/organization.html">Nosotros</a></li>
+                        <li><a href="../HTML/plants.html">Plantas</a></li>
+                        <li><a href="../HTML/login.html">Socios</a></li>
+                        <li><a href="../HTML/contact.html">Contacto</a></li>
+                      </ul>
+                    </div>  
             </section>
+            <h1 > CLUB SOCIAL 4:20 </h1>
+            <p></p>
+        </header>
+        <main>
+            <section>
+              <h2>Escríbenos</h2>
+              <form action="">
+                <fieldset>
+                    <div>
+                      <label for="name">Nombre:</label>
+                      <input type="text" id="name" name="user_name" placeholder="Nombre" value="">
+                    </div>
+                    <div>
+                      <label for="apellido">Apellido:</label>
+                      <input type="text" id="apellido" name="user_name" placeholder="Apellido" value="">
+                    </div>
+                    <div>
+                      <label for="mail">Correo electronico</label>
+                      <input type="text" id="mail" name="user_name" placeholder="Correo electronico" value="">
+                    </div>
+                    <div>
+                      <label for="repite">Numero Telefonico</label>
+                      <input type="number" id="repite" name="user_name" placeholder="Numero Telefonico" value="">
+                    </div>
+                </fieldset>
+                <fieldset>
+                  <legend>Cuales son tus intereses</legend>
+                  <button type="submit">Enviar</button>
+                </fieldset>
+              </form>
+            </section>
+            <section>
+                <h2>Visitanos</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d379.7097745674403!2d-3.7019625414876574!3d40.4159792222592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422880f3369961%3A0xc8665784f573c48b!2sCalle+de+la+Victoria%2C+9%2C+28012+Madrid!5e0!3m2!1ses-419!2ses!4v1563311110076!5m2!1ses-419!2ses" width="1000" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </section>
+        </main>
+        <footer>
+            <nav class="nav-footer">
+                <a class="nav-footer-image" href="https://www.facebook.com">
+                    <img src="../Media/facebook-footer.png" alt="Enlace a Facebook">
+                </a>
+                <a class="nav-footer-image" href="https://twitter.com/?lang=es">
+                    <img src="../Media/twitter-footer.png" alt="Enlace a Twitter">
+                </a>
+                <a class="nav-footer-image" href="https://instagram.com">
+                    <img  src="../Media/instagram-footer.png" alt="Enlace a Instagram">
+                </a>
+                <a class="nav-footer-image" href="https://linkedin.com">
+                    <img src="../Media/linked-footer.png" alt="ENlace a LinkedIn">
+                </a>
+                <a class="nav-footer-image" href="https://youtube.com">
+                    <img  src="../Media/youtube-footer.png" alt="Enlace a Youtube">
+                </a>
+                <a class="nav-footer-image" href="./Files/Contact.html">
+                    <img src="../Media/correo-footer.png" alt="Enlace a Contacto">
+                </a>
+            </nav>  
+            <p> TDI - Derechos Reservados 2019</p>              
+        </footer>
+        <script src="../Scripts/main.js"></script>
+    </body>
+</html>
+<!--
+    <main>
+        
             <img class="main__image"   src="../RESOURCES/marihuanaprincipal4.jpg">
             <h1 class="title-pg">CONTACTANOS</h1>
             <section class="formulario">
-                <section>
-  
-                    
-                    <form method="POST" action="">
-                        <legend>Acepto Que Soy Mayor de 21 años</legend>
-                    </br>
-                        <div>
-                          <input type="radio" id="edad" name="drone" value="sexo" checked>
-                          <label for="huey">Si</label>
-                          <input type="radio" id="edad2" name="drone" value="sexo" checked>
-                          <label for="sexo2">No</label>
-                        </div>
-                      </br>
-                    </br>
-               
-                    
-                        <div>
-                         <label for="name">Nombre:</label>
-                         <input type="text" id="name" name="user_name" placeholder="Nombre" value="">
-                        </div>
-                        <div>
-                             <label for="apellido">Apellido:</label>
-                         <input type="text" id="apellido" name="user_name" placeholder="Apellido" value="">
-                        </div>
-                        <div>
-                            <label for="mail">Correo electronico</label>
-                            <input type="text" id="mail" name="user_name" placeholder="Correo electronico" value="">
-                        </div>
-                        
-                        <div>
-                            <label for="passusuario">Documento de Identidad</label>
-                            <input type="number" type="text" id="passusuario" name="user_name" placeholder="Numero de Documento" value="">
-                        </div>
-                        <div>
-                          <label for="repite">Numero Telefonico</label>
-                          <input type="number" id="repite" name="user_name" placeholder="Numero Telefonico" value="">
-                        </div>
-            
-                    
-                        
-                 </section>
-            
-                          <div>
-                          <h2>Fecha de Nacimiento</h2>
-                          <label for="diahoy"> </label>
-                          <input type="date" name="diahoy" id="diahoy">
-                        </div>
-                      </br>
-                    
-                        <h2>FOTOGRAFIA </h2>
-                       <div>
-                         <label for="fotografia">FOTOGRAFIA</label>
-                         <input type="file" name="sintesis" id="sintesis" > </input>
-                         <input type="reset" name="borrar" id="borrar"> </input>
-                       </div>
-            
-                      </br>
-                    </br>
-                 <fieldset>
-                         <legend>Indique su sexo</legend>
-                         <div>
-                           <input type="radio" id="sexo" name="drone" value="sexo" checked>
-                           <label for="huey">hombre</label>
-                           <input type="radio" id="sexo2" name="drone" value="sexo" checked>
-                           <label for="sexo2">mujer</label>
-                         </div>
-                         <div>
-                                 <label for="story"> Comentarios:</label>
-                                 <textarea id="story" name="story" placeholder="Comentario">
-                                   
-                                 </textarea>
-                         
-                        </div>
-                        <fieldset>
-                                <legend>Cuales son tus intereses</legend>
-                                <div>
-                                  <input type="checkbox" id="deporte" name="interest" value="coding" >
-                                  <label for="deporte">Tecnologia</label>
-                                </div>
-                                <div>
-                                  <input type="checkbox" id="music" name="interest" value="music" checked>
-                                  <label for="music">Deportes</label>
-                                <div><input type="checkbox" id="ver tv " name="interest" value="ver tv" >
-                                  <label for="ver tv">Vida sana</label></div>
-                                <div> <input type="checkbox" id="hacer ejercicio " name="interest" value="hacer ejercicio" >
-                                  <label for="hacer ejercicio">Electronica</label>
-                                </div>
-                                <div> <input type="checkbox" id="otro" name="interest" value="hacer ejercicio" >
-                                    <label for="otro">Tv y ocio</label>
-                                  </div>
-                                </div>
-                              </fieldset>
-                              <fieldset>
-                        <div>
-                             <button type="submit">Enviar</button>
-                      </div>
-                      </fieldset>
-                    </section>
-                      
-            
-            
-            
-
-
-                    <footer>
-
-
-                        
-                            <nav class="nav-footer">
-                                <a class="nav-footer-image" href="https://www.facebook.com">
-                                    <img src="../Media/facebook-footer.png">
-                                </a>
-                                <a class="nav-footer-image" href="https://twitter.com/?lang=es">
-                                    <img src="../Media/twitter-footer.png">
-                                </a>
-                                <a href="https://instagram.com">
-                                    <img class="nav-footer-image"src="../Media/instagram-footer.png">
-                                </a>
-                                <a class="nav-footer-image" href="https://linkedin.com">
-                                    <img src="../Media/linked-footer.png">
-                                </a>
-                                <a class="nav-footer-image" href="https://youtube.com">
-                                    <img  src="../Media/youtube-footer.png">
-                                </a>
-                                <a class="nav-footer-image" href="./Files/Contact.html">
-                                    <img src="../Media/correo-footer.png">
-                                </a>
-                            </nav>  
-                            <p> da club - Derechos Reservados 2019</p>              
-                        </footer>
-                    </html>
-                
+                <section>-->
