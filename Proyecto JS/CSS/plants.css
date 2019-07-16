@@ -1,0 +1,93 @@
+/* Archivos de Estilos 
+Aca se indican los estilos de la pagina products */
+
+a{
+    text-decoration: none;
+    text-align: center;
+    color: #FDFEFE;
+    position: relative;
+    display: block;
+}
+
+li{
+    display:block;
+    box-sizing: content-box;
+}
+
+.title-pg{
+    visibility: hidden;
+    margin-top: 0.1rem;
+}
+
+li:hover{
+    display:flex;
+    box-sizing: content-box;
+    background:orange;
+}
+
+.products-image:hover{
+    box-shadow: 5rem;
+    transform: translateY(-5rem);
+}
+
+.products-image{
+    width: auto;   
+}
+.main-productos{
+    position:relative;
+    display: flexbox;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    animation-duration: 1s;
+    animation-name: fade-out;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: none;
+    transition: box-shadow .2s ease-in-out,
+                transform .2 ease-in-out;
+    transform: translateY(0);
+    
+}
+
+.products-img-cont{
+    background: transparent;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom: 0.25rem;
+    padding: 1rem;
+    align-content: center;
+    align-items:center;
+    cursor: pointer;
+    transition: all ease-in-out 0.7s;
+}
+
+.description{
+font-size:24px;
+margin: 0;
+margin-bottom: 10px;
+}
+
+.details{
+color:#919191;
+font-size:14px;
+font-weight:600
+}
+
+.price{
+border-radius: 5px;
+margin-right:10px;
+padding: 3px 0;
+text-align: center;
+width: calc(50% - 20px);
+}
+
+.products-list{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    width: AUTO;
+
+}

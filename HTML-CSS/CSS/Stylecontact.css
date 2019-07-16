@@ -1,0 +1,29 @@
+/* Archivos de Estilos 
+Aca se indican los estilos de la pagina contact */
+
+
+
+
+a{
+    text-decoration: none;
+    text-align: center;
+    color: #FDFEFE;
+    position: relative;
+    display: block;
+}
+
+li{
+    display:block;
+    box-sizing: content-box;
+}
+
+.title-pg{
+    visibility: hidden;
+    margin-top: 0.1rem;
+}
+
+li:hover{
+    display:flex;
+    box-sizing: content-box;
+    background:red;
+}

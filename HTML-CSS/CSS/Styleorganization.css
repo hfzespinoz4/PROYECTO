@@ -1,0 +1,100 @@
+/* Archivos de Estilos 
+Aca se indican los estilos de la pagina organization */
+
+
+
+
+a{
+    text-decoration: none;
+    text-align: center;
+    color: #FDFEFE;
+    position: relative;
+    display: block;
+}
+
+li{
+    display:block;
+    box-sizing: content-box;
+}
+
+.title-pg{
+    visibility: hidden;
+    margin-top: 0.1rem;  
+}
+
+li:hover{
+    display:flex;
+    box-sizing: content-box;
+    background:red;
+}
+
+.section-main{
+    margin-bottom: 6rem;
+
+}
+
+.team-member{
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: all  0.7s ease-in-out; 
+}
+
+.member-image:hover{
+    box-shadow: 5rem;
+    transform: translateY(-1rem);
+}
+
+
+.member-image{
+        background: transparent;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        border-bottom: 0.25rem;
+        border-radius: 30%;
+        padding: 1rem;
+        align-content: center;
+        align-items:center;
+        cursor: pointer;
+        transition: all ease-in-out 0.7s;
+        margin: 1rem;
+        
+}
+
+.team{
+    position:relative;
+    display: flexbox;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    animation-duration: 1s;
+    animation-name: fade-out;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: none;
+    transition: box-shadow .2s ease-in-out,
+                transform .2 ease-in-out;
+    transform: translateY(0);
+}
+
+.member-info{
+    font-size:24px;
+    margin: 0;
+    margin-bottom: 10px;
+    }
+
+.members{
+    position:relative;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    animation-duration: 1s;
+    animation-name: fade-out;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: none;
+    transition: box-shadow .2s ease-in-out,
+                transform .2 ease-in-out;
+    transform: translateY(0);
+    }

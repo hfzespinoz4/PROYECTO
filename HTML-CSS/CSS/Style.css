@@ -1,0 +1,153 @@
+/* Archivo de Estilos 
+Acá se indican las clases e identificadores que son 
+utilizados de manera global en el sitio web */
+
+.main{
+    font-family: 'Segoe UI', Verdana;
+    line-height: 1.0; 
+    margin-left: 4rem;
+    margin-right: 4rem;
+    background: linear-gradient(to top, #0076A2, white 10%);  
+
+}
+
+.nav-footer{
+    align-content: center;
+    align-items:center;
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5rem;
+    margin-left: 1rem;
+    margin-right:1rem;
+    position: relative;
+    padding-left: 1rem;
+    padding-right: 1rem;   
+}
+
+.nav-menu{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: content;
+    position: sticky;
+    text-align:center;
+    margin-bottom: 2rem;
+    list-style: none;
+    background: #0076A2;
+    text-decoration-color: white;
+    padding-bottom: 1rem;
+    padding-top:1rem;
+}
+
+.main-promos{
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items:center;
+}
+
+.main-desc1{
+    display: flex;
+    position: relative;
+}
+
+.main-desc2{
+    display: flex;
+    position:relative;
+}
+
+.main-trends1{
+    display: flex;
+    position: relative;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.main-trends2{
+    display:flex;
+    position:relative;
+    margin-top: 0.5rem;
+    margin-bottom:0.5rem;
+
+}
+
+footer{
+  
+    align-content: space-around;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    margin-top: 2rem;
+    position: relative;    
+    
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    color: #FDFEFE;
+    position: relative;
+    display: block;
+}
+
+li{
+    display:block;
+    box-sizing: content-box;
+}
+
+.title-pg{
+    visibility: hidden;
+}
+
+li:hover{
+    display:flex;
+    box-sizing: content-box;
+    background:red;
+}
+
+.main__image{
+    width: 100%;
+}
+
+.main__promos-image{
+    width: 25%;
+}
+
+/* Clases utilizadas en el footer del sitio web */
+
+.nav-footer-image{
+    cursor: pointer;
+    transition: all  0.7s ease-in-out;
+
+}
+.nav-footer-image:hover{
+    box-shadow: 5rem;
+    transform: translateY(-2rem);
+    
+
+}
+
+footer{
+  
+    align-content: space-around;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    margin-top: 2rem;
+    position: relative;    
+    
+}
+
+#logo{
+    position: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+    align-content: space-around;
+    justify-items: center;
+    position:relative;
+    display:block;
+    margin:auto;
+}
