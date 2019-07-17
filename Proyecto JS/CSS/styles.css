@@ -13,7 +13,7 @@ a{
     display: block;
 }
 
-#logo{
+.company-logo{
     position: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -30,20 +30,40 @@ a{
     line-height: 1.0; 
     margin-left: 4rem;
     margin-right: 4rem;
-    background: linear-gradient(to top, #0076A2, white 10%);  
+    background: linear-gradient(to top, #0076A2, rgb(250, 248, 248) 10%);  
 
 }
 
 .main-image{
     width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: content;
+    position: sticky;
+    text-align:center;
+    margin-bottom: 2rem;
+    list-style: none;
+    background: #0076A2;
+    text-decoration-color: white;
+    color: white;
+    padding-bottom: 1rem;
+    padding-top:1rem;
 }
 
 .main-promos{
+    display: flex;
     position: relative;
-    display:flex;
     justify-content: space-between;
     align-content: center;
     align-items:center;
+}
+
+.main-banner{
+    background-image: url("../media/bn-nube.jpg");
+    height: 20rem;
+    align-content: center;
+
 }
 
 .main-promos-image{
@@ -69,12 +89,11 @@ a{
     padding-top:1rem;
     
 }
-li:hover{
-    display:flex;
+li:hover span:hover{
+    display:block;
     box-sizing: content-box;
     background: red;
 }
-
 
 
 /*Estilo de Menú Hamburguesa */
@@ -259,4 +278,95 @@ footer{
 .nav-footer-image:hover{
     box-shadow: 5rem;
     transform: translateY(-2rem);
+}
+
+/*Estilos de página principal*/
+/*======================================*/
+
+.us{
+    
+    color: white;
+    padding: 8.5rem;;
+    padding-bottom: 4rem;
+    text-align:center;
+    border-style:solid;
+    border-width: 1px;
+    border-color:#0076A2;
+    background-color: #0076A2;
+    
+}
+
+.us:hover{
+    background-color: rgb(207, 52, 39);
+    background-image:none;
+}
+
+.company-section{
+    justify-content: space-between;
+    color: white;
+    padding: 10rem;;
+    padding-bottom: 4rem;
+    text-align:center;
+    border-style:solid;
+    border-width: 1px;
+    border-color:#0076A2;
+    background-color: #0076A2;
+}
+
+.business-case{
+    color: white;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    padding-left: 12rem;
+    padding-right: 11rem;
+    text-align:center;
+    border-style:solid;
+    border-width: 1px;
+    border-color:#0076A2;
+    background-color: #0076A2;
+    
+}
+
+h2{
+    text-align: center;   
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+p{
+    text-align: center;
+}
+
+.recent{
+    padding-bottom: 4rem;
+    padding-top: 1rem;
+}
+
+.space-bet-section{
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+hr{
+    border-style: solid;
+    border-color: rgb(207, 52, 39);
+    border-width: 0.1rem;
+
+}
+
+.company-description{
+    align-content: center;
+
+}
+
+.call-to-action{
+    background-color: rgb(207, 52, 39);
+    color: white;
+    padding: 1rem 4rem 1rem 4rem;
+    font-family: 'Montserrat', sans-serif;
+    border-style: none;
 }
