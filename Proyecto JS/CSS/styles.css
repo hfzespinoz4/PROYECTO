@@ -63,6 +63,7 @@ a{
     background-image: url("../media/bn-nube.jpg");
     height: 20rem;
     align-content: center;
+    color: white;
 
 }
 
@@ -92,7 +93,7 @@ a{
 li:hover span:hover{
     display:block;
     box-sizing: content-box;
-    background: red;
+    background:rgb(207, 52, 39);
 }
 
 
@@ -252,6 +253,7 @@ footer{
     justify-content: center;
     margin-top: 2rem;
     position: relative;      
+    padding-top: 2rem;
 }
 
 .nav-footer{
@@ -320,11 +322,12 @@ footer{
     padding-left: 12rem;
     padding-right: 11rem;
     text-align:center;
-    border-style:solid;
-    border-width: 1px;
-    border-color:#0076A2;
-    background-color: #0076A2;
-    
+    background-color: #0076A2;    
+}
+
+.business-case:hover{
+    background-color: rgb(207, 52, 39);
+    background-image:none;
 }
 
 h2{
@@ -335,6 +338,7 @@ h1{
     text-align: center;
     color: white;
     font-weight: bold;
+    padding-top: 2rem;
 }
 
 p{
@@ -367,6 +371,10 @@ hr{
     background-color: rgb(207, 52, 39);
     color: white;
     padding: 1rem 4rem 1rem 4rem;
-    font-family: 'Montserrat', sans-serif;
     border-style: none;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    margin-left: 39%;
+    margin-right: 35%;
+    font-weight: bold;
 }
