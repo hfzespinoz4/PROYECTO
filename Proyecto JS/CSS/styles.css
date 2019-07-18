@@ -13,8 +13,28 @@ a{
     display: block;
 }
 
+h2{
+    text-align: center;   
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding-top: 2rem;
+}
+
+p{
+    text-align: center;
+}
+
+hr{
+    border-style: solid;
+    border-color: rgb(207, 52, 39);
+    border-width: 0.1rem;
+}
+
 .company-logo{
-    position: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
     align-items: center;
@@ -39,7 +59,6 @@ a{
     display:flex;
     justify-content: space-around;
     align-items: center;
-    align-content: content;
     position: sticky;
     text-align:center;
     margin-bottom: 2rem;
@@ -64,13 +83,22 @@ a{
     height: 20rem;
     align-content: center;
     color: white;
+}
 
+.main-nbanner{
+    height: 12rem;
+    align-content: center;
+    color: black;
 }
 
 .main-promos-image{
     width: 24%;
 }
 
+.shadow{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    padding: 2rem;
+}
 
 /*Estilos de Menú*/
 /*===============================*/
@@ -78,7 +106,6 @@ a{
     display:flex;
     justify-content: space-around;
     align-items: center;
-    align-content: content;
     position: sticky;
     text-align:center;
     margin-bottom: 2rem;
@@ -88,6 +115,7 @@ a{
     color: white;
     padding-bottom: 1rem;
     padding-top:1rem;
+    
     
 }
 li:hover span:hover{
@@ -278,7 +306,6 @@ footer{
 }
 
 .nav-footer-image:hover{
-    box-shadow: 5rem;
     transform: translateY(-2rem);
 }
 
@@ -295,6 +322,7 @@ footer{
     border-width: 1px;
     border-color:#0076A2;
     background-color: #0076A2;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     
 }
 
@@ -323,26 +351,12 @@ footer{
     padding-right: 11rem;
     text-align:center;
     background-color: #0076A2;    
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .business-case:hover{
     background-color: rgb(207, 52, 39);
     background-image:none;
-}
-
-h2{
-    text-align: center;   
-}
-
-h1{
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    padding-top: 2rem;
-}
-
-p{
-    text-align: center;
 }
 
 .recent{
@@ -353,13 +367,7 @@ p{
 .space-bet-section{
     margin-top: 3rem;
     margin-bottom: 4rem;
-}
-
-hr{
-    border-style: solid;
-    border-color: rgb(207, 52, 39);
-    border-width: 0.1rem;
-
+    
 }
 
 .company-description{
@@ -377,4 +385,38 @@ hr{
     margin-left: 39%;
     margin-right: 35%;
     font-weight: bold;
+}
+
+.hidden-title{
+    visibility: hidden;
+}
+
+.title-style{
+    text-align: center;
+    color: rgb(207, 52, 39);
+    font-weight: bold;
+    padding-top: 2rem;
+}
+.products{
+    position: relative;
+    
+}
+
+.main-productos{
+    position: relative;
+    display: flex;
+    align-content: center;
+    margin-bottom: 4rem;
+}
+
+.main-productos:hover{
+    box-shadow: 0 10px 20px rgba(0,118,162,0.19), 0 6px 6px rgb(0, 119, 162);
+}
+
+.founders{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 1rem;
+    
 }
