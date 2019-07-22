@@ -8,11 +8,9 @@
         <meta name="description" content="Asociacion de Cannabis">
         <meta name="viewport" content="width=device-width"/>
         <link rel="shortcut icon" href="../RESOURCES/TDI-Logo.png" />
-        <link rel="stylesheet" type="text/css" href="../CSS/login.css">
         <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
         <link rel="stylesheet" href="../CSS/animate.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-        <!--Revisar estilos aplicados-->
         <title>TDI - Tecnología y Desarrollo</title>
     </head>
     <body class="main">
@@ -25,7 +23,6 @@
                     <li><a href="products.html">Productos</a></li>
                     <li><a href="services.html">Servicios</a></li>
                     <li><a href="login.html">Clientes</a></li>
-                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contacto</a></li>
                 </ul>
             </div>
@@ -41,33 +38,31 @@
                             <li><a href="products.html">Productos</a></li>
                             <li><a href="services.html">Servicios</a></li>
                             <li><a href="login.html">Clientes</a></li>
-                            <li><a href="blog.html">Blog</a></li>
                             <li><a href="contact.html">Contacto</a></li>
                         </ul>
                     </div>  
             </section>
-            <h1 > Servicios </h1>
+            <h1 class="title-style"> ¿Qué desea hacer? </h1>
             <p></p>
         </header>
-        <main>
-            <section class="login">
-                <h2>Inicie Sesión</h2>
-                <div class="login-triangle"></div>                
+        <main class="founders">
+            <section class="login main-productos shadow">
                 <h2 class="login-header">Iniciar Sesion</h2>
                 <form class="login-container">
-                    <p><input type="email" placeholder="Email"></p>
-                    <p><input type="password" placeholder="Password"></p>
-                    <p><input type="submit" value="Log in"></p>
+                    <p><input type="email" placeholder="Correo Electrónico"></p>
+                    <p><input type="password" placeholder="Contraseña"></p>
+                    <p><input type="submit" value="Iniciar Sesión"></p>
                 </form>
             </section>
-            <section class="login">
-                <h2>Registrarse</h2>
-                <div class="login-triangle"></div>                
+            <section class="login main-productos shadow">       
                 <h2 class="login-header">Registrarse</h2>
                 <form class="login-container">
-                    <p><input type="email" placeholder="Email"></p>
-                    <p><input type="password" placeholder="Password"></p>
-                    <p><input type="submit" value="Log in"></p>
+                    <p><input type="text" placeholder="Nombre" requeired></p>
+                    <p><input type="text" placeholder="Apellidos" required></p>
+                    <p><input type="tel" placeholder="Teléfono" min=9 max="9" required></p>
+                    <p><input type="email" placeholder="Correo Electrónico" required></p>
+                    <p><input type="password" placeholder="Contraseña" requiered></p>
+                    <p><input type="submit" value="Registrarse"></p>
                 </form>
             </section>
         </main>
@@ -92,7 +87,7 @@
                     <img src="../media/correo-footer.png" alt="Enlace a Contacto">
                 </a>
             </nav>  
-            <p> TDI - Derechos Reservados 2019</p>              
+            <p>TDI - Derechos Reservados 2019</p>              
         </footer>
         <script src="../Scripts/login.js"></script>
     </body>
