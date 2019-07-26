@@ -42,7 +42,7 @@ hr{
     justify-items: center;
     position:relative;
     display:block;
-    margin:auto;
+    
 }
 
 .main{
@@ -51,6 +51,7 @@ hr{
     margin-left: 4rem;
     margin-right: 4rem;
     background: linear-gradient(to top, #0076A2, rgb(250, 248, 248) 10%);  
+
 }
 
 .main-image{
@@ -102,58 +103,173 @@ hr{
 /*Estilos de Menú*/
 /*===============================*/
 .nav-menu{
-    padding: 0;
-    position: relative;
-    padding-bottom: 0.5rem;
-    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    text-align:center;
+    margin-bottom: 2rem;
+    list-style: none;
+    background: #0076A2;
+    text-decoration-color: white;
+    color: white;
+    padding-bottom: 1rem;
+    padding-top:1rem;
+    
+    
+}
+li:hover span:hover{
+    display:block;
+    box-sizing: content-box;
+    background:rgb(207, 52, 39);
 }
 
-.nav-menu li{
-    display: inline;
-}
 
-.nav-menu li a{
-    font-size: 1rem;
-    text-decoration:none;
-    float:left;
-    padding:1.2rem 3.6rem 1.2rem 3.7rem;
-    background-color: #0076A2;
-    color: #fff;
-}
-
-.nav-menu li a:hover{
-    background-color: rgb(207, 52, 39);
-    margin-top: -2;
-    padding-bottom: 0.4rem;
-    transition: 1s all;
-}
-
-.nav-menu li{
-    display:inline-block;
-}
-
-.nav-menu a{
-    color:#fff;
-    display: inline-block;
-    text-align: center;
-    text-decoration:none;
-    line-height: 1.2rem;
-}
-
-.nav-menu li:last-child a {
-    border-right: 0;
-}
-.nav-menu a:hover, .nav-menu a:active{
-    background-color:rgb(207, 52, 39);
-}
+/*Estilo de Menú Hamburguesa */
+/*===============================*/
 
 .menu-wrap {
     display: none;
 }
 
-/* Responsive Menu */
-/*=====================================*/
+@media (max-width:783px) {
+    .main-header {
+        display: none;
+    }
 
+    .menu-wrap {
+        display: flex;
+        position: sticky;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+    
+    .menu-wrap .toggler {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        cursor: pointer;
+        width: 3.50rem;
+        height: 3.50rem;
+        opacity: 0;
+    }
+    
+.hamburger {
+    width: 3.50rem;
+    height: 3.50rem;
+}
+
+    .menu-wrap .hamburger {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        padding: 0.5rem;
+        background: var(--primary-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .menu-wrap .hamburger > div {
+        position: relative;
+        width: 100%;
+        height: 0.125rem;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease;
+    }
+    
+    .menu-wrap .hamburger:before,
+    .menu-wrap .hamburger:after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: -10px;
+        width: 100%;
+        height: 2px;
+        background: inherit;
+    }
+    
+    .menu-wrap .hamburger:after {
+        top: 10px;
+    }  
+ 
+    .menu-wrap .toggler:checked + .hamburger {
+        transform: rotate(360deg);
+        transition: 0.5s;
+    }
+    
+    .menu-wrap .toggler:checked ~ .menu {
+        visibility: visible;
+    }
+    
+    .menu-wrap .toggler:checked ~ .menu > div {
+        transform: scale(1);
+        transition-duration: var(--menu-speed);
+    }
+    
+    .menu-wrap .toggler:checked ~ .menu > div > div {
+        opacity: 1;
+        transition: opacity 0,4s ease;
+    }
+    
+    .menu-wrap .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .menu-wrap .menu > div {
+        background: var(--overlay-color);
+        border-radius: 50%;
+        width: 200vw;
+        height: 200vw;
+        display: flex;
+        flex: none;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0);
+        transition: all 0.4s ease;
+    }
+    
+    .menu-wrap .menu > div > div {
+        text-align: center;
+        max-width: 90vw;
+        max-width: 100vh;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+    
+    .menu-wrap .menu > div > div > ul > li {
+        list-style: none;
+        color: #0076A2;
+        font-size: 2.5rem;
+        padding: 1rem;
+    }
+    
+    .menu-wrap .menu > div > div > ul > li > a {
+        color: inherit;
+        text-decoration: none;
+        transition: color 0.4s ease;
+    }
+
+    .container-body{
+        flex-wrap: wrap;
+    }
+
+}
 
 /*Estilos de Footer*/
 /*===============================*/
@@ -185,6 +301,8 @@ footer{
 .nav-footer-image{
     cursor: pointer;
     transition: all  0.7s ease-in-out;
+    /*position: relative;*/
+
 }
 
 .nav-footer-image:hover{
@@ -193,6 +311,7 @@ footer{
 
 /*Estilos de página principal*/
 /*======================================*/
+
 .us{
     
     color: white;
@@ -204,6 +323,7 @@ footer{
     border-color:#0076A2;
     background-color: #0076A2;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    
 }
 
 .us:hover{
@@ -247,10 +367,12 @@ footer{
 .space-bet-section{
     margin-top: 3rem;
     margin-bottom: 4rem;
+    
 }
 
 .company-description{
     align-content: center;
+
 }
 
 .call-to-action{
@@ -297,8 +419,8 @@ footer{
     padding: 1rem;  
 }
 
-/*Estilos del Registro/Login de clientes y Formulario de Contacto*/
-/*===============================================================*/
+/*Estilos del Registro/Login de clientes*/
+/*================================================*/
 
 .login {
     width: 400px;
@@ -306,6 +428,7 @@ footer{
     font-size: 16px;
 }
 
+/* Reset top and bottom margins from certain elements */
 .login-header,
 .login p {
     margin-top: 0;
@@ -325,6 +448,8 @@ footer{
     background: rgb(250, 248, 248);
     padding: 12px;
 }
+  
+/* Every row inside .login-container is defined with p tags */
 .login p {
     padding: 12px;
 }
@@ -406,134 +531,3 @@ textarea{
     align-content: center;
 }
 
-@media (max-width:768px) {
-
-    .main{
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-
-    .hamburger{
-        position:fixed;
-      background-color:transparent;
-        left:0;
-        top:0;
-        height:30px;
-        width:30px;
-        padding:20px 20px;
-        -webkit-transform:translate3d(0, 0, 0);
-        transform:translate3d(0, 0, 0);
-        -webkit-transition:-webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-        transition:transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-        z-index:1002;
-        cursor:pointer;
-        -webkit-user-select:none;
-        -moz-user-select:none;
-        -ms-user-select:none;
-        user-select:none
-    }
-    .hamburger.is-active{
-      background-color:none;
-    }
-    ._layer{
-        background:#333333;
-        margin-bottom:4px;
-        border-radius:2px;
-        width:28px;
-        height:4px;
-        opacity:1;
-        -webkit-transform:translate3d(0, 0, 0);
-        transform:translate3d(0, 0, 0);
-        -webkit-transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-        transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-    }
-    .hamburger:hover .-top{
-        -webkit-transform:translateY(-100%);
-        -ms-transform:translateY(-100%);
-        transform:translateY(-100%);
-    }
-    .hamburger:hover .-bottom{
-        -webkit-transform:translateY(100%);
-        -ms-transform:translateY(100%);
-        transform:translateY(100%);
-        }
-    .hamburger.is-active .-top{
-        -webkit-transform:translateY(200%) rotate(45deg); 
-        -ms-transform:translateY(200%) rotate(45deg) ;
-        transform:translateY(200%) rotate(45deg) ;
-    }
-    .hamburger.is-active .-mid{
-        opacity:0;
-    }
-    .hamburger.is-active .-bottom{
-        -webkit-transform:translateY(-200%) rotate(135deg) ;
-        -ms-transform:translateY(-200%) rotate(135deg) ;
-        transform:translateY(-200%) rotate(135deg) ;
-    }
-    
-    .menuppal.is_active{
-      transform: translate3d(0px, 0px, 0px);
-    }
-
-    .menuppal{
-       background-color: rgb(0, 118, 162);
-        bottom: 0;
-        height: 100%;
-        left: 0;
-        overflow-y: scroll;
-        position: fixed;
-        top: 0;
-        transform: translate3d(0px, -100%, 0px);
-        transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
-        width: 100%;
-        z-index: 1001;
-    }
-
-    .menuppal ul{
-      margin:0;padding:0;
-    }
-
-    .menuppal ul li { 
-      list-style: none;
-        text-align:center;
-        font-size:1.5rem;
-        line-height:3em;
-        height:3em;
-        text-transform:none;
-        font-weight:bold;
-    }
-
-    .menuppal ul li a:hover{
-      text-decoration:none;
-      color:rgb(207, 52, 39);
-    }
-
-    .nav-menu a:hover, .nav-menu a:active{
-        background-color:rgb(207, 52, 39);
-    }
-
-    .company-logo{
-        width: 10rem;
-        align-items: center;
-    }
-
-    .call-to-action{
-        margin-left: 15%;
-        margin-right:15%;
-    }
-
-    .main-promos{
-        display: table-row;
-        position: relative;
-        align-content: center;
-        align-items:center;
-        margin: 4rem;
-        width: 100%;
-        justify-content: space-between;
-        
-    }
-    
-    .us .business-case{
-        margin: 4rem;
-    }
-}
