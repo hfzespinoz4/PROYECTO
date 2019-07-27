@@ -1,59 +1,3 @@
-/*Archivo de estilos CSS
-En este archivo se encuentran todos los estilos utilizados en el sitio web,
-ordenados según su finalidad y sección del HTML en el que són aplicados*/
-
-/*Estilos Generales*/
-/*===============================*/
-
-a{
-    text-decoration: none;
-    text-align: center;
-    color: #FDFEFE;
-    position: relative;
-    display: block;
-}
-
-h2{
-    text-align: center;   
-}
-
-h1{
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    padding-top: 2rem;
-}
-
-p{
-    text-align: center;
-}
-
-hr{
-    border-style: solid;
-    border-color: rgb(207, 52, 39);
-    border-width: 0.1rem;
-}
-
-.company-logo{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    align-items: center;
-    align-content: space-around;
-    justify-items: center;
-    position:relative;
-    display:block;
-    
-}
-
-.main{
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.0; 
-    margin-left: 4rem;
-    margin-right: 4rem;
-    background: linear-gradient(to top, #0076A2, rgb(250, 248, 248) 10%);  
-
-}
-
 .main-image{
     width: 100%;
     display:flex;
@@ -70,34 +14,8 @@ hr{
     padding-top:1rem;
 }
 
-.main-promos{
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-content: center;
-    align-items:center;
-}
-
-.main-banner{
-    background-image: url("../media/bn-nube.jpg");
-    height: 20rem;
-    align-content: center;
-    color: white;
-}
-
-.main-nbanner{
-    height: 12rem;
-    align-content: center;
-    color: black;
-}
-
 .main-promos-image{
     width: 24%;
-}
-
-.shadow{
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    padding: 2rem;
 }
 
 /*Estilos de Menú*/
@@ -115,18 +33,18 @@ hr{
     color: white;
     padding-bottom: 1rem;
     padding-top:1rem;
-    
-    
 }
+
+/*
 li:hover span:hover{
     display:block;
     box-sizing: content-box;
     background:rgb(207, 52, 39);
 }
-
+*/
 
 /*Estilo de Menú Hamburguesa */
-/*===============================*/
+/*===============================
 
 .menu-wrap {
     display: none;
@@ -269,265 +187,19 @@ li:hover span:hover{
         flex-wrap: wrap;
     }
 
-}
+}*/
 
 /*Estilos de Footer*/
 /*===============================*/
 
-footer{
-    align-content: space-around;
-    text-align: center;
-    text-decoration: none;
-    justify-content: center;
-    margin-top: 2rem;
-    position: relative;      
-    padding-top: 2rem;
-}
 
-.nav-footer{
-    align-content: center;
-    align-items:center;
-    display: flex;
-    justify-content: center;
-    margin-top: 3.5rem;
-    margin-left: 1rem;
-    margin-right:1rem;
-    position: relative;
-    padding-left: 1rem;
-    padding-right: 1rem;   
-}
-
-
-.nav-footer-image{
-    cursor: pointer;
-    transition: all  0.7s ease-in-out;
-    /*position: relative;*/
-
-}
-
-.nav-footer-image:hover{
-    transform: translateY(-2rem);
-}
 
 /*Estilos de página principal*/
 /*======================================*/
 
-.us{
-    
-    color: white;
-    padding: 8.5rem;;
-    padding-bottom: 4rem;
-    text-align:center;
-    border-style:solid;
-    border-width: 1px;
-    border-color:#0076A2;
-    background-color: #0076A2;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    
-}
 
-.us:hover{
-    background-color: rgb(207, 52, 39);
-    background-image:none;
-}
-
-.company-section{
-    justify-content: space-between;
-    color: white;
-    padding: 10rem;;
-    padding-bottom: 4rem;
-    text-align:center;
-    border-style:solid;
-    border-width: 1px;
-    border-color:#0076A2;
-    background-color: #0076A2;
-}
-
-.business-case{
-    color: white;
-    padding-top: 5rem;
-    padding-bottom: 4rem;
-    padding-left: 12rem;
-    padding-right: 11rem;
-    text-align:center;
-    background-color: #0076A2;    
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-
-.business-case:hover{
-    background-color: rgb(207, 52, 39);
-    background-image:none;
-}
-
-.recent{
-    padding-bottom: 4rem;
-    padding-top: 1rem;
-}
-
-.space-bet-section{
-    margin-top: 3rem;
-    margin-bottom: 4rem;
-    
-}
-
-.company-description{
-    align-content: center;
-
-}
-
-.call-to-action{
-    background-color: rgb(207, 52, 39);
-    color: white;
-    padding: 1rem 4rem 1rem 4rem;
-    border-style: none;
-    font-family: 'Montserrat', sans-serif;
-    position: relative;
-    margin-left: 39%;
-    margin-right: 35%;
-    font-weight: bold;
-}
-
-.hidden-title{
-    visibility: hidden;
-}
-
-.title-style{
-    text-align: center;
-    color: rgb(207, 52, 39);
-    font-weight: bold;
-    padding-top: 2rem;
-}
-.products{
-    position: relative;   
-}
-
-.main-productos{
-    position: relative;
-    display: flex;
-    align-content: center;
-    margin-bottom: 4rem;
-}
-
-.main-productos:hover{
-    box-shadow: 0 10px 20px rgba(0,118,162,0.19), 0 6px 6px rgb(0, 119, 162);
-}
-
-.founders{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    padding: 1rem;  
-}
 
 /*Estilos del Registro/Login de clientes*/
 /*================================================*/
 
-.login {
-    width: 400px;
-    margin: 16px auto;
-    font-size: 16px;
-}
-
-/* Reset top and bottom margins from certain elements */
-.login-header,
-.login p {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-  
-.login-header {
-    background:#0076A2;
-    padding: 20px;
-    font-size: 1.4em;
-    font-weight: normal;
-    text-align: center;
-    color: #fff;
-  }
-  
-.login-container {
-    background: rgb(250, 248, 248);
-    padding: 12px;
-}
-  
-/* Every row inside .login-container is defined with p tags */
-.login p {
-    padding: 12px;
-}
-  
-.login input {
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    border-width: 1px;
-    border-style: solid;
-    padding: 16px;
-    outline: 0;
-    font-size: 0.9rem;
-}
-  
-input[type="email"],
-input[type="text"],
-input[type="tel"],
-input[type="password"] {
-    background: #fff;
-    border-color: #bbb;
-    color: #555;
-}
-  
-/* Text fields' focus effect */
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="text"]:focus,
-input[type="tel"]:focus {
-    border-color: #888;
-  }
-  
-input[type="submit"] {
-   background:  rgb(207, 52, 39);
-   border-color: transparent;
-   color: #fff;
-   cursor: pointer;
-}
-  
-input[type="submit"]:hover {
-   background: rgb(207, 52, 39);
-}
-  
-/* Buttons' focus effect */
-input[type="submit"]:focus {
-   border-color:orange;
-}
-
-.contact-image{
-   width: 15rem;
-   height: 15rem;
-}
-
-.contact-image:hover{
-    box-shadow: 0 10px 20px rgba(207, 52, 39,0.19), 0 6px 6px rgb(207, 52, 39);
-}
-
-.callto{
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: space-around;
-    justify-items: center;
-}
-
-textarea{
-    width: 30rem;
-    height: 10rem;
-    border-style: line;
-    border-color: #bbb;
-    color:#555;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.contact-form{
-    background: none;
-    align-content: center;
-}
 

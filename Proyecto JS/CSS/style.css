@@ -1,152 +1,51 @@
+/*Estilos Generales ===============================*/
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
     box-sizing: border-box;
 }
 
-/* codigo proyecto anterior*/
-
-.main-banner{
-    background-image: url("../Media/bn-nube.jpg");
-    height: 20rem;
-    align-content: center;
-    color: white;
-}
-
-/* */
-
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    background-color :  #0076A2;
-    font-family: "poppins", sans-serif;
-}
-
-.logo{
-    color: rgb(226,226,226);
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 20px;
-}
-
-.nav-links{
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-}
-
-.nav-links li{
-    list-style: none;
-}
-
-
-.nav-links a{
-    color: rgb(226, 226, 226);
+a{
     text-decoration: none;
-    letter-spacing:3px;
-    font-weight: bold;
-    font-size: 14px;
+    text-align: center;
+    color: #FDFEFE;
+    position: relative;
+    display: block;
 }
 
-
-
-
-.burger{
-    display: none;
-    cursor: pointer;
+h2{
+    text-align: center;
+    margin-bottom: 0.6rem;   
 }
 
-
-.burger div{
-    width: 25px;
-    height: 5px;
-    background-color: rgb(226, 226, 226);
-    margin: 5px;
-    transition: all 0.3s ease;
+p{
+    text-align: center;
 }
 
-
-@media screen and (max-width:1024px){
-    .nav-links{
-        width: 60%;
-   
-      }
-   }
-   
-   @media screen and (max-width:768px){
-    body{
-        overflow-x: hidden;
-    }
-
-       .nav-links{
-           position: absolute;
-           right: 0px;
-           height: 92vh;
-           top: 8vh;
-           background-color :  #0076A2;
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-           width: 50%;
-           transform: translateX(100%);
-           
-   }
-   .nav-links li{
-       opacity: 0;
-   }
-   .burger{
-       display: block;
-       
-   }
-}
-   
-.nav-active{
-    transform: translateX(0%);
-}
-   
-@keyframes navLinkFade{
-    from{
-        opacity: 0;
-        transform: translateX()
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-
-    }
+hr{
+    border-style: solid;
+    border-color: rgb(207, 52, 39);
+    border-width: 0.1rem;
+    margin-bottom: 1rem;
 }
 
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
+.main{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.0; 
+    margin-left: 4rem;
+    margin-right: 4rem;
+    background: linear-gradient(to top, #0076A2, rgb(250, 248, 248) 10%);  
 }
-
-
-.toggle .line2{
-    opacity: 0;
-}
-
-
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px);
-
-}
-
-
-/* estilos del proyecto anterio*/
+/*Clases Generales================================================================*/
 
 .company-description{
     align-content: center;
-
 }
 
 .space-bet-section{
     margin-top: 3rem;
-    margin-bottom: 4rem;
-    
+    margin-bottom: 4rem;   
 }
-
 
 .main-promos{
     display: flex;
@@ -156,9 +55,7 @@ nav{
     align-items:center;
 }
 
-
 .us{
-    
     color: white;
     padding: 8.5rem;;
     padding-bottom: 4rem;
@@ -167,8 +64,7 @@ nav{
     border-width: 1px;
     border-color:#0076A2;
     background-color: #0076A2;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);   
 }
 
 .us:hover{
@@ -178,10 +74,8 @@ nav{
 
 .space-bet-section{
     margin-top: 3rem;
-    margin-bottom: 4rem;
-    
+    margin-bottom: 4rem;    
 }
-
 
 .business-case{
     color: white;
@@ -202,6 +96,394 @@ nav{
 .space-bet-section{
     margin-top: 3rem;
     margin-bottom: 4rem;
-    
 }
 
+.company-section{
+    justify-content: space-between;
+    color: white;
+    padding: 10rem;;
+    padding-bottom: 4rem;
+    text-align:center;
+    border-style:solid;
+    border-width: 1px;
+    border-color:#0076A2;
+    background-color: #0076A2;
+}
+
+.business-case{
+    color: white;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    padding-left: 12rem;
+    padding-right: 11rem;
+    text-align:center;
+    background-color: #0076A2;    
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.business-case:hover{
+    background-color: rgb(207, 52, 39);
+    background-image:none;
+}
+
+.space-bet-section{
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.company-description{
+    align-content: center;
+    margin-top: 1rem;
+}
+
+.call-to-action{
+    background-color: rgb(207, 52, 39);
+    color: white;
+    padding: 1rem 4rem 1rem 4rem;
+    border-style: none;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    margin-left: 39%;
+    margin-right: 35%;
+}
+
+.hidden-title{
+    visibility: hidden;
+}
+
+.title-style{
+    text-align: center;
+    color: rgb(207, 52, 39);
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.products{
+    position: relative;   
+}
+
+.main-productos{
+    position: relative;
+    display: flex;
+    align-content: center;
+    margin-bottom: 4rem;
+}
+
+.main-productos:hover{
+    box-shadow: 0 10px 20px rgba(0,118,162,0.19), 0 6px 6px rgb(0, 119, 162);
+}
+
+.main-promos{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-content: center;
+    align-items:center;
+}
+
+.shadow{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    padding: 2rem;
+}
+
+.main-nbanner{
+    height: 12rem;
+    align-content: center;
+    color: black;
+}
+
+.serv-description{
+    margin: 1rem 0rem;
+}
+/*Estilos del Header (Logo, Menú y Main Banner)=========================*/
+.main-banner{
+    background-image: url("../Media/bn-nube.jpg");
+    height: 20rem;
+    align-content: center;
+    color: white;
+    margin-top: 2rem;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    padding-top: 2rem;
+}
+
+.company-logo{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+    align-content: space-around;
+    justify-items: center;
+    position:relative;
+    display:block;   
+}
+
+.nav-mmenu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color :  #0076A2;
+}
+
+.logo{
+    color: rgb(226,226,226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 0.5rem;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    position: sticky;
+}
+
+.nav-links li{
+    list-style: none;
+    text-align: center;
+    padding: 1.2rem;
+}
+
+.nav-links li:hover, .nav-links li:active{
+    background-color: rgb(207, 52, 39);
+    transition: 1.1s ease;
+}
+
+.nav-links a{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing:3px;
+    font-size: 0,5rem;
+    width: 12rem;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 5px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/*Estilos del Footer============================================*/
+footer{
+    align-content: space-around;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    margin-top: 2rem;
+    position: relative;      
+    padding-top: 2rem;
+}
+
+.nav-footer{
+    align-content: center;
+    align-items:center;
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5rem;
+    margin-left: 1rem;
+    margin-right:1rem;
+    position: relative;
+    padding-left: 1rem;
+    padding-right: 1rem;   
+}
+
+.nav-footer-image{
+    cursor: pointer;
+    transition: all  0.7s ease-in-out;
+    /*position: relative;*/
+}
+
+.nav-footer-image:hover{
+    transform: translateY(-2rem);
+}
+
+/*Página Nosotros================================================================*/
+.founders{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 1rem;  
+}
+
+/*Página Contacto===============================================================*/
+
+.login {
+    width: 400px;
+    margin: 16px auto;
+    font-size: 16px;
+}
+
+/* Reset top and bottom margins from certain elements */
+.login-header,
+.login p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+  
+.login-header {
+    background:#0076A2;
+    padding: 20px;
+    font-size: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+}
+  
+.login-container {
+    background: rgb(250, 248, 248);
+    padding: 12px;
+}
+  
+.login p {
+    padding: 12px;
+}
+  
+.login input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+    outline: 0;
+    font-size: 0.9rem;
+}
+  
+input[type="email"],
+input[type="text"],
+input[type="tel"],
+input[type="password"] {
+    background: #fff;
+    border-color: #bbb;
+    color: #555;
+}
+  
+/*Efectos de foco en los campos de texto */
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus {
+    border-color: #888;
+}
+  
+input[type="submit"] {
+   background:  rgb(207, 52, 39);
+   border-color: transparent;
+   color: #fff;
+   cursor: pointer;
+}
+  
+input[type="submit"]:hover {
+   background: rgb(207, 52, 39);
+}
+  
+/*Efecto de focos en botones */
+input[type="submit"]:focus {
+   border-color:orange;
+}
+
+.contact-image{
+   width: 15rem;
+   height: 15rem;
+}
+
+.contact-image:hover{
+    box-shadow: 0 10px 20px rgba(207, 52, 39,0.19), 0 6px 6px rgb(207, 52, 39);
+}
+
+.callto{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+textarea{
+    width: 30rem;
+    height: 10rem;
+    border-style: line;
+    border-color: #bbb;
+    color:#555;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact-form{
+    background: none;
+    align-content: center;
+}
+/*Media Querys==========================================================*/
+
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 60%;
+    }
+}
+   
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color :  #0076A2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+    }
+
+   .nav-links li{
+       opacity: 0;
+    }
+
+   .burger{
+        display: block;
+    }
+}
+   
+.nav-active{
+    transform: translateX(0%);
+}
+   
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX()
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
