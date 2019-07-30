@@ -172,9 +172,8 @@ body{
 }
 
 .serv-info{
-    margin-top:4rem;
-    padding-top: 4rem;
-    display: block;
+    top:4rem;
+    display: flex;
     
 }
 
@@ -429,7 +428,12 @@ footer{
     from{opacity:.4}
     to{opacity:1}
     }
+/*Página Productos==============================================================*/
 
+.productos{
+    width:60rem;
+    display: flex;
+}
 /*Página Contacto===============================================================*/
 
 .login {
