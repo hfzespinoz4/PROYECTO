@@ -653,9 +653,39 @@ textarea{
         margin: 0rem 1rem;
     }
 
+    .slider-partner{
+        margin-left: 0;
+        margin-top: 0.3rem;
+        width:15rem;
+        height: 10rem;
+    }
+
+    .mySlides{
+        width:15rem;
+        height: 30rem;
+        }
+
     .nav-links li:hover, .nav-links li:active{
         background-color: rgb(207, 52, 39);
         transition: 1.1s ease;
+    }
+
+    .founder-desc{
+        flex-direction: column;
+        display: block;
+    }
+    .fndr-desc{
+        flex-direction: column;
+    }
+
+    .founders{
+        display: block;
+        flex-direction: column;
+        margin: 0.3rem; 
+        width:40rem;
+        align-content: center;
+        justify-content: center;
+         
     }
 
     .nav-links{
