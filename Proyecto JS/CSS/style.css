@@ -59,13 +59,15 @@ body{
 
 .us{
     color: white;
-    padding: 8.5rem;;
-    padding-bottom: 4rem;
     text-align:center;
     border-style:solid;
     border-width: 1px;
     background-color: #0076A2;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);   
+    min-width: 10rem;
+    max-width: 10rem;
+    min-height: 10rem;
+    max-height: 15rem;
 }
 
 .us:hover{
@@ -92,6 +94,7 @@ body{
     padding-right: 11rem;*/
     width: 22rem;
     text-align:center;
+    font-size:1.5rem;
     background-color: #0076A2;    
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
@@ -175,6 +178,15 @@ body{
     top:4rem;
     display: flex;
     
+}
+
+.us-img{
+    min-width: 10rem;
+    max-width: 10rem;
+    min-height: 10rem;
+    max-height: 10rem;
+
+
 }
 
 /*Estilos del Header (Logo, Menú y Main Banner)=========================*/
@@ -427,7 +439,16 @@ footer{
     @keyframes fade{
     from{opacity:.4}
     to{opacity:1}
-    }
+    }.login input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+    outline: 0;
+    font-size: 0.9rem;
+}
 /*Página Productos==============================================================*/
 
 .productos{
@@ -684,9 +705,88 @@ textarea{
         margin: 0.3rem; 
         width:40rem;
         align-content: center;
-        justify-content: center;
-         
+        justify-content: center;   
     }
+
+    .main-banner{
+        width: 20rem;
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+
+    .banner-container{
+        width: 20rem;
+        margin-bottom: 1rem;
+    }
+
+    .serv-info{
+        margin-left:0;
+        margin-top:3rem;
+        width: 20rem;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .banner-images{
+        width: 19.5rem;
+        height: 12rem;
+        
+    }
+
+    #h1{
+        margin-top: 3rem;
+    }
+
+    h1{
+        text-align: center;
+        color: white;
+        margin-top: 1rem;
+        font-size: 0.7rem;
+    }
+    .serv-description{
+        font-size:0.5rem;
+    }
+
+    .call-to-action{
+        margin-left: 3rem;
+        margin-right: 0rem;
+        align-self: center;
+        justify-self: center;
+        position: relative;
+    }
+
+    .serv-container{
+        margin-top: 3rem;
+    }
+
+    .login {
+        width: 15rem;
+        margin: 0.5rem auto;
+        font-size: 0.8rem;
+    }
+
+    .login input {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-width: 1px;
+        border-style: solid;
+        padding: 0.7rem;
+        outline: 0;
+        font-size: 0.9rem;
+    }
+
+    textarea{
+        width: 15rem;
+        height: 12rem;
+    }
+
+    .callto{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
 
     .nav-links{
         position: absolute;
