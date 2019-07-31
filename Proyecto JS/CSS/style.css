@@ -134,7 +134,7 @@ body{
     position: relative;
     display: flex;
     align-content: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .main-productos:hover{
@@ -434,6 +434,60 @@ footer{
     width:60rem;
     display: flex;
 }
+
+.prod-section{
+    display:flex;
+    left: 0rem;
+}
+
+.products-list{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    width: AUTO;
+
+}
+
+.products-image{
+    width: 20rem;
+    height: 20rem;
+}
+
+.prods{
+    position:relative;
+    display: flexbox;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    animation-duration: 1s;
+    animation-name: fade-out;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow .2s ease-in-out,
+                transform .2 ease-in-out;
+    transform: translateY(0);
+}
+
+.description{
+    font-size:24px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+    
+.details{
+color:#919191;
+font-size:1rem;
+font-weight:600;
+text-align:center;
+}
+
+.price{
+border-radius: 5px;
+padding: 0.1rem 0;
+text-align: center;
+}
 /*Página Contacto===============================================================*/
 
 .login {
@@ -570,6 +624,14 @@ textarea{
 
     hr{
         margin: 0rem 1rem;
+    }
+
+    .prods{
+        flex-direction: column;
+    }
+
+    .main-direction{
+        flex-direction: column;
     }
 }
    
