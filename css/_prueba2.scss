@@ -1,0 +1,12 @@
+:root{
+    --font:'Courier New', Courier, monospace;
+    --mcolor: blue;
+}
+
+.user-card{
+    font-family: var(--font);
+    color: var(--mcolor);
+    &:active{
+        color: white;
+    }
+}
